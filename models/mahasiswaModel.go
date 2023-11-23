@@ -84,3 +84,4 @@ func (p *MahasiswaModel) Update(mahasiswa entities.Mahasiswa) error {
 func (p *MahasiswaModel) Delete(id int64) {
     p.conn.Exec("DELETE FROM mahasiswa WHERE id = ?", id)
 }
+
